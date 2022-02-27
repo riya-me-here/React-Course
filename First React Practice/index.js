@@ -1,9 +1,12 @@
-//ReactDOM.render(<h1 className="header">Hello, React</h1>, document.getElementById("root"));
+ReactDOM.render(
+  <h1 className="header">Hello, React</h1>,
+  document.getElementById("root")
+);
 //ReactDOM is a local variable and it has a render method which allows us to render/place something on the screen
-// ReactDOM.render(
-//   <p>Hello this is Riya, learning React</p>,
-//   document.getElementById("root2")
-// );
+ReactDOM.render(
+  <p>Hello this is Riya, learning React</p>,
+  document.getElementById("root2")
+);
 ReactDOM.render(
   <ul>
     <li>html</li>
@@ -38,3 +41,17 @@ const webpage = (
   </nav>
 );
 ReactDOM.render(webpage, document.getElementById("root2"));
+
+// const exercise = (
+//   <div>
+//     <img src="./logo.png" />
+//     <h1>Fun facts about React</h1>
+//     <ul>
+//       <li>lorem ipsum</li>
+//       <li>lorem ipsum</li>
+//       <li>lorem ipsum</li>
+//       <li>lorem ipsum</li>
+//     </ul>
+//   </div>
+// );
+// ReactDOM.render(exercise, document.getElementById("root"));
