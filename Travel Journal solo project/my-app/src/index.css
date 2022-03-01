@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #e69429;
+  padding: 30px 25px;
+  height: 90px;
+}
+.nav--logo_text {
+  margin-right: auto;
+  margin-left: 7px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+}
+.nav--icon {
+  height: 50px;
+  margin-left: 40%;
+}
+.location-icon {
+  height: 20px;
+}
+.card-img {
+  height: 300px;
+  width: 400px;
+  border-radius: 4%;
+}
+.cards-list {
+  display: block;
+}
+.card {
+  display: flex;
+  padding: 3%;
+}
+.card-info {
+  padding: 2%;
+}
+.place {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.country {
+  font-size: large;
+}
+.date {
+  font-weight: 300;
+  color: gray;
+}
