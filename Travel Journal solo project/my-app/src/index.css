@@ -55,3 +55,10 @@ nav {
   font-weight: 300;
   color: gray;
 }
+.url {
+  margin-left: 20px;
+  color: #e69429;
+}
+.hr-line {
+  margin-top: 20px;
+}
