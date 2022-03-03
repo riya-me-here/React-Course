@@ -2,6 +2,7 @@ import React from "react";
 import star from "../images/star.png";
 
 export default function Card(props) {
+  //recieving props here from App.js
   let badegText;
   if (props.item.openSpots === 0) {
     badegText = "SOLD OUT";
