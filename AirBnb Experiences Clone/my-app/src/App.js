@@ -8,7 +8,7 @@ export default function App() {
   const cards = data.map((item) => {
     return (
       <Card
-        key={item.id}
+        key={item.id} //we use this map function to convert an array of raw data into an array of JSX elements that can be displayed on the page
         // img={item.img}
         // rating={item.rating}
         // reviewCount={item.reviewCount}
