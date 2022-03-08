@@ -8,6 +8,7 @@ export default function App() {
   const [tenzies, setTenzies] = React.useState(false);
 
   React.useEffect(() => {
+    //By using this Hook, you tell React that your component needs to do something after render
     const allHeld = dice.every((die) => die.isHeld);
     const firstValue = dice[0].value;
     const allSameValue = dice.every((die) => die.value === firstValue);
@@ -16,7 +17,7 @@ export default function App() {
       setTenzies(true);
       console.log("You won!");
     }
-  }, [dice]);
+  }, [dice]); //only want to use this effect to run every time the dice array changes its state
 
   function generateNewDie() {
     return {
