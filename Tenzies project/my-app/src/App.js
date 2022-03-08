@@ -52,11 +52,12 @@ export default function App() {
       setDice(allNewDice());
     }
   }
+  //we will only keep the state in App component and the holdDice function will be passe down to each one of the die component
   function holdDice(id) {
     //function for holding the die
     setDice((oldDice) =>
       oldDice.map((die) => {
-        return die.id === id ? { ...die, isHeld: !die.isHeld } : die;
+        return die.id === id ? { ...die, isHeld: !die.isHeld } : die; //is die.id same as the id passed in the Update the `holdDice` function to flip the `isHeld` property on the object in the arraythat was clicked, based on the `id` prop passe into the function.
       })
     );
   }
@@ -66,7 +67,7 @@ export default function App() {
       key={die.id}
       value={die.value}
       isHeld={die.isHeld}
-      holdDice={() => holdDice(die.id)}
+      holdDice={() => holdDice(die.id)} //passing the function to Die component and passing dice id as the parameter
     />
   ));
   //in button part, if tenzies is true means game have been won, button text changes tp new game
